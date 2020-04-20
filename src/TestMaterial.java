@@ -18,13 +18,15 @@ public class TestMaterial {
                 System.out.println("Name : " + material.name);
                 System.out.println("NSX: " + ((BotChienGion) material).day + "/" + ((BotChienGion) material).month + "/" + ((BotChienGion) material).year);
                 System.out.println("HSD : " + material.dateOfManufacture());
-                System.out.println("Discount : " + ((BotChienGion) material).CalculatorDiscount(0.05) + " $");
+                System.out.println("Money : "+material.calculatorMoney());
+                System.out.println("Discount : " + ((BotChienGion) material).CalculatorDiscount(5) + " $");
             } else if (material instanceof Meat) {
                 material = (Meat) material;
                 System.out.println("Name : " + material.name);
                 System.out.println("NSX: " + ((Meat) material).day + "/" + ((Meat) material).month + "/" + ((Meat) material).year);
                 System.out.println("HSD : " + material.dateOfManufacture());
-                System.out.println("Discount : " + ((Meat) material).CalculatorDiscount(0.1) + " $");
+                System.out.println("Money : "+material.calculatorMoney());
+                System.out.println("Discount : " + ((Meat) material).CalculatorDiscount(10) + " $");
             }
         }
     }
